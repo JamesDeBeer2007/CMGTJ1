@@ -5,5 +5,7 @@ button {
     font-size: 40px;
 
     /* Voer jouw code hieronder in */
-
+    padding: 55px;
+    margin-top: 20px;
+    margin-right: 40px;
 }

@@ -5,5 +5,8 @@ p {
     text-align: justify;
 
     /* Voer jouw code hieronder in */
-    
+    margin:auto;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
