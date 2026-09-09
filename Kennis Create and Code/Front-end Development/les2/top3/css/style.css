@@ -1,0 +1,136 @@
+/* default stuff */
+*
+{
+    font-family: 'comic sans ms';
+    margin: 0;
+}
+
+body
+{
+    background-color: #222224;
+}
+/* navbar stuff */
+nav
+{
+    line-height: 40vh;
+    border-bottom: 5vh solid #222224;
+    background-color: #f00000;
+    padding: 1rem;
+    border-radius: 10vh 10vh 0vh 0vh;
+    border: 1vh solid #222224;
+    text-align: center;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+
+/* header stuff */
+header
+{
+    padding: 1rem;
+    height: 40vh;
+    background-color: #f0f0f0;
+    border: 1vh solid #222224;
+    text-align: center;
+    border-radius: 0 0 10vh 10vh;
+}
+
+/* main stuff*/
+main
+{
+    background-color: #222224;
+}
+
+/* sections stuff */
+section
+{
+    padding: 1rem;
+    border: 1vh solid #222224;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#section1
+{
+    text-align: left;
+    align-items: flex-start;
+    border-left: 5vh solid #222224;
+    background-color: #796ce5;
+}
+
+#section2
+{
+    text-align: right;
+    align-items: flex-end;
+    border-right: 5vh solid #222224;
+    background-color: #a85b4a;
+}
+
+#section3
+{
+    text-align: left;
+    align-items: flex-start;
+    border-left: 5vh solid #222224;
+    background-color: #8ccbf9;
+}
+
+/* text elements */
+h1
+{
+    font-size: 3rem;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+p
+{
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* img flexbox zooi */
+#container1, #container2, #container3 
+{
+    height: 150px;
+    width: 150px;
+    border: 1vh solid #222224;
+    border-radius: 100%;
+
+    display: flex;  /* flexbox core */
+    justify-content: center;    /* horizontale img centering */
+    align-items: center;    /* verticale img centering */
+    overflow: hidden;   /* haal uitstekende hoekjes weg */
+    background-color: white;
+    box-sizing: border-box; /* stopt broder bij die 150px max size */
+
+    box-shadow: 0px 0px 10px black;
+}
+
+#container1 img, #container2 img, #container3 img 
+{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;    /* past de img in de box zonder lelikk te maken */
+    padding: 1rem;  /* meer ruimte tussen img en border */
+    box-sizing: border-box; /* fixed padding in de flexbox */
+}
+
+/* footer stuff*/
+footer
+{
+    line-height: 10vh;
+    border: 1vh solid #222224;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 1rem;
+}
