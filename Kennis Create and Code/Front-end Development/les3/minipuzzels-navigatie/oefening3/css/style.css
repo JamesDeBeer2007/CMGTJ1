@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 15px 0;
+    background-color: #E2E7F0;
+    align-items: center;
+}
+
+/* Voer jouw code hieronder in */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* De state wanneer de muisaanwijzer op de link staat */
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.blue-button {
+
+    /* Voer jouw code hieronder in */
+    color:blue;
+    background-color: white;
+
+    border: 1px solid blue;
+    border-radius: 10%;
+
+    padding: 10px;
+
+}
+
+.blue-button:hover {
+
+    /* Voer jouw code hieronder in */
+    color:white;
+    background-color: blue;
+    
+    border: 1px solid blue;
+    text-decoration: none;
+}

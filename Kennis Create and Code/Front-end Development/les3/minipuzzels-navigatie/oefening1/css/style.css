@@ -1,0 +1,20 @@
+/* De default state. De pseudo-class hiervoor is :link, maar je kan dus ook gewoon de a als selector gebruiken */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* De state wanneer je de link al eerder bezocht hebt */
+a:visited {
+    color: purple;
+}
+
+/* De state wanneer de muisaanwijzer op de link staat */
+a:hover {
+    text-decoration: underline;
+}
+
+/* De state tijdens het klikken */
+a:active {
+    background-color: yellow;
+}

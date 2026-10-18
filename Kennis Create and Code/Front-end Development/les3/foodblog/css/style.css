@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Voer jouw code hieronder in */
+nav{
+    width: 100vh;
+    height: 10vh;
+
+    display: flex;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    padding: 3vh;
+}
+
+#receptBtn
+{
+    border: 3px solid #457B9D;
+    background-color: #457B9D;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#receptBtn:hover
+{
+    border: 3px solid #457B9D;
+    background-color: white;
+    color: #457B9D;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    background-color: #457B9D;
+}
+
+header{
+    background-color: #A0ABC0;
+    padding: 2rem;
+    border-radius: 5px;
+}
+#headerIndex{
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main{
+    padding-top: 2rem;
+}
+
+section{
+    border:3px solid black;
+    border-radius: 5px;
+    display: flex;
+    width: 45vw;
+
+}
+
+#recepten{
+    display: flex;
+    justify-content: space-between;
+}
+
+#recept1, #recept2{
+    padding: 1rem;
+    gap: 2vw;
+}
+
+#carrotCake, #tiramisu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#carrotCake, #tiramisu, #flexImg{
+    flex: 1;
+}
+
+img{
+    height: auto;
+    width:  100%;
+    border-radius: 5px;
+}
+
+#headerCarrot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+}
+
+#sectionRecept{
+    width: 100%;
+    box-sizing: border-box;
+}

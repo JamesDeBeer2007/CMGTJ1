@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+      <div class="center-container">
+        <section>
+          <h1>Contactformulier</h1>
+          <form
+            action="https://docent.cmi.hr.nl/moora/frontend/send-mail.php"
+            method="POST"
+            id="form-flexbox"
+          >
+            <div class="container">
+              <label for="name" class="flex-label">Naam*</label>
+              <input
+                type="text"
+                name="name"
+                id="naam"
+                placeholder="Voer volledige naam in..."
+                required=""
+                class="flex-input"
+              />
+            </div>
+
+            <div class="container">
+              <label for="email" class="flex-label">E-mail*</label>
+              <input
+                type="email"
+                name="email"
+                id="e-mail"
+                placeholder="Voer e-mailadres in..."
+                required=""
+                class="flex-input"
+              />
+            </div>
+
+            <div class="container">
+              <label for="city" class="flex-label">Woonplaats*</label>
+              <input
+                type="text"
+                name="city"
+                id="woonplaats"
+                placeholder="Voer woonplaats in..."
+                class="flex-input"
+                required=""
+              />
+            </div>
+
+            <div class="container">
+              <label for="birthdate" class="flex-label">Geboortedatum*</label>
+              <input
+                type="date"
+                id="geboortedatum"
+                name="birthdate"
+                class="flex-input"
+                required=""
+              />
+            </div>
+
+            <div class="container">
+              <label for="send-to" class="flex-label">Verstuur naar*</label>
+              <select id="docent" name="send-to" class="flex-input" required="">
+                <option value="" disabled="" selected="">Kies docent...</option>
+                <option value="0">docent 1</option>
+                <option value="1">Docent 2</option>
+                <option value="2">Martijn</option>
+              </select>
+            </div>
+
+            <div id="div-radio">
+              <label>Categorie*</label>
+              <div id="div-radio-input">
+                <div>
+                  <input
+                    type="radio"
+                    id="algemeen"
+                    name="category"
+                    value="algemeen"
+                  />
+                  <label for="algemeen">Algemeen</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    id="programmeren"
+                    name="category"
+                    value="programmeren"
+                  />
+                  <label for="programmeren">Programmeren</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="cle" name="category" value="cle" />
+                  <label for="cle">CLE</label>
+                </div>
+              </div>
+            </div>
+
+            <label for="question">Jouw vraag*</label>
+            <textarea
+              id="vraag"
+              name="question"
+              rows="4"
+              cols="50"
+              required=""
+            ></textarea>
+
+            <div>
+              <input
+                type="checkbox"
+                id="algemene-voorwaarden"
+                name="algemene-voorwaarden"
+                value="algemene-voorwaarden"
+                required=""
+              />
+              <label for="algemene-voorwaarden"
+                >Ik ga akkoord met de algemene voorwaarden</label
+              >
+            </div>
+
+            <button type="submit">Verstuur e-mail</button>
+            <p>* Verplichte velden</p>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

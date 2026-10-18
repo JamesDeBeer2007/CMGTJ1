@@ -1,0 +1,58 @@
+body{
+  background-color: aquamarine;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+section div {
+  background-color: white;
+  width: 20%;
+  height: 120px;
+  border-radius: 20px;
+  padding: 20px;
+  
+  transform: translateY(-300%);
+  animation: falling-cards 3s forwards;
+}
+
+#div1{
+  animation-delay: 0.8s;
+}
+#div2{
+  animation-delay: 0.7s;
+}
+#div3{
+  animation-delay: 0.6s;
+}
+#div4{
+  animation-delay: 0.5s;
+}
+#div5{
+  animation-delay: 0.4s;
+}
+#div6{
+  animation-delay: 0.3s;
+}
+#div6{
+  animation-delay: 0.2s;
+}
+#div8{
+  animation-delay: 0.1s;
+}
+
+@keyframes falling-cards{
+    0% {
+      opacity: 0;
+      transform: translateY(-300%) rotateY(180deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) rotateY(0deg);
+    }
+}
